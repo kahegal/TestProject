@@ -33,8 +33,7 @@ class m180305_124205_news extends Migration
             'id' => $this->primaryKey(),
             'title' => $this->string()->notNull(),
             'content' => $this->text(),
-            'date_create' => $this->init(),
-            'deleted' => $this->tinyInteger(),
+            'date_create' => $this->integer(11),
         ]);
     }
 
